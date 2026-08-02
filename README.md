@@ -1,3 +1,5 @@
+https://krizleebear.github.io/freischnitt-webapp/
+
 # freischnitt Web-App (Release Build)
 
 Dies sind die betriebsbereiten, minifizierten Web-App-Dateien für **freischnitt** (Zuschnittplaner).
