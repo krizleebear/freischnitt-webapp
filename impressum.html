@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum & Datenschutz – freischnitt</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #121418;
+      --bg-card: #1B1E24;
+      --border-color: #2D323E;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --accent-amber: #F59E0B;
+      --accent-green: #10B981;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+    }
+    .impressum-main {
+      max-width: 680px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .impressum-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .impressum-card h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .impressum-card h2 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent-amber);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 1.5rem 0 0.4rem;
+    }
+    .impressum-card p {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      margin: 0 0 1rem 0;
+    }
+    .impressum-card a {
+      color: var(--accent-amber);
+      text-decoration: none;
+    }
+    .impressum-card a:hover {
+      text-decoration: underline;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="impressum-main">
+    <a href="/" class="back-link">← Zurück zu freischnitt</a>
+
+    <div class="impressum-card">
+      <h1>Impressum & Datenschutz</h1>
+
+      <h2>Angaben gemäß § 5 DDG (ehemals § 5 TMG)</h2>
+      <p id="address-block"></p>
+
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail: <a id="email-link" href="#">blog&#64;christianleberfinger&#46;de</a>
+      </p>
+      <script>
+        (function() {
+          var n = ['Christian', 'Leberfinger'].join(' ');
+          var s = ['Gneisenau', 'straße 23a'].join('');
+          var c = ['85051', 'Ingolstadt'].join(' ');
+          var addr = document.getElementById('address-block');
+          if (addr) {
+            addr.innerHTML = '<strong>' + n + '</strong><br>' + s + '<br>' + c + '<br>Deutschland';
+          }
+          var u = 'blog';
+          var d = 'christianleberfinger.de';
+          var el = document.getElementById('email-link');
+          if (el) {
+            el.href = 'mailto:' + u + '@' + d;
+            el.onclick = function() { window.location.href = 'mailto:' + u + '@' + d; return false; };
+          }
+        })();
+      </script>
+
+      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p>
+        Christian Leberfinger (Anschrift wie oben)
+      </p>
+
+      <h2>Datenschutzerklärung (DSGVO)</h2>
+      <p>
+        <strong>100 % Lokale Datenverarbeitung:</strong> Die Anwendung <em>freischnitt</em> speichert und verarbeitet Bauteile, Stücklisten, Materialien und Einstellungen ausschließlich lokal im Browserspeicher (<code>localStorage</code>) Ihres Endgeräts. Es werden keine personenbezogenen Daten oder Projektdaten auf externe Server übertragen.
+      </p>
+      <p>
+        <strong>Hosting (GitHub Pages):</strong> Beim Aufrufen dieser Webseite werden durch den Hosting-Anbieter GitHub Inc. (San Francisco, USA) technisch erforderliche Verbindungsdaten (z. B. IP-Adresse, Zugriffszeitpunkt) in Server-Logfiles verarbeitet.
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
