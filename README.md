@@ -2,6 +2,8 @@
 
 Dies sind die betriebsbereiten, minifizierten Web-App-Dateien für **freischnitt** (Zuschnittplaner).
 
+🌐 **Offizielle Web-App & Online-Version:** https://krizleebear.github.io/freischnitt-webapp/
+
 ## Nutzungsbedingungen & Lizenz
 
 Diese Software wird unter den Bedingungen der **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** bereitgestellt.
